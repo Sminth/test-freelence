@@ -9,7 +9,7 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 
 ### Aperçu
 
-<video width="320" height="240" controls autoplay>
+<video width="320" height="240" controls>
   <source src="doc/apercu.mp4" type="video/mp4" >
   votre navigateur ne supporte pas.
 </video>
