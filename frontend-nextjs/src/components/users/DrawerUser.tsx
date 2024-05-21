@@ -87,7 +87,7 @@ const DrawerUser = ({
       {contextHolder}
       <Drawer
         title={
-          user ? "Modifier un utilisateur" : "Ajouter un nouvel utilisateur"
+          user?.id ? "Modifier un utilisateur" : "Ajouter un nouvel utilisateur"
         }
         width={420}
         onClose={onClose}

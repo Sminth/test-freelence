@@ -2,11 +2,16 @@
 
 Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 
+
+
 ### Fonctionnalités
 
 - [x] **CRUD** des utilisateurs
 - [x] **NOTIFICATION** de SUCCES ou d'ECHEC des opérations
 
+### Aperçu
+
+[IMG](doc/img.png)
 
 ### Installation en local
 
@@ -35,10 +40,6 @@ Ouvrer [http://localhost:3000](http://localhost:3000) Avec votre navigateur .
 
 PuiVous verrez une interface pour ajouter, modifier, supprimer, afficher les utilisateurs.
 
-
-## Lien
-
-pas encore en ligne
 
 ### Contributeurs
 
