@@ -11,7 +11,10 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 
 ### Aperçu
 
-[IMG](doc/img.png)
+<video width="320" height="240" controls autoplay>
+  <source src="doc/apercu.mov" type="video/mp4" >
+  Your browser does not support the video tag.
+</video>
 
 ### Installation en local
 

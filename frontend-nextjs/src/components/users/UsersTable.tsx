@@ -11,28 +11,21 @@ import {
 import { useState, useEffect } from "react";
 import DrawerUser from "./DrawerUser";
 import axios from "@/util/axios";
+import { IUser } from "../interface/IUser";
 
-interface DataType {
-  key?: string;
-  id: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  contact: string;
-}
 
-interface UsersTableProps extends TableProps<DataType> {
+interface UsersTableProps extends TableProps<IUser> {
   search?: string;
 }
 
 const UsersTable = ({ search, ...props }: UsersTableProps) => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState<DataType[]>([]);
-  const [currentUser, setCurrentUser] = useState<DataType | null>(null);
+  const [data, setData] = useState<IUser[]>([]);
+  const [currentUser, setCurrentUser] = useState<IUser | null>(null);
   const [messageApi, contextHolder] = message.useMessage();
 
-  const showDrawer = (user: DataType) => {
+  const showDrawer = (user: IUser) => {
     setCurrentUser(user);
     setOpen(true);
   };
@@ -75,7 +68,7 @@ const UsersTable = ({ search, ...props }: UsersTableProps) => {
   useEffect(() => {
     fetchData();
   }, []);
-  const columns: TableProps<DataType>["columns"] = [
+  const columns: TableProps<IUser>["columns"] = [
     {
       title: "Nom",
       dataIndex: "firstName",
@@ -110,7 +103,7 @@ const UsersTable = ({ search, ...props }: UsersTableProps) => {
           <Popconfirm
             title="Supprimer cet utilisateur ?"
             description="êtes vous sur de vouloir supprimer cet utilisateur?"
-            onConfirm={() => onDelete(record.id)}
+            onConfirm={() => onDelete(record?.id!)}
             onCancel={() => console.log("Cancel")}
             okText="oui"
             cancelText="Non"

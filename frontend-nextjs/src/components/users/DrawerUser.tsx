@@ -12,14 +12,8 @@ import {
 } from "antd";
 import React, { useEffect, useState } from "react";
 import axios from "@/util/axios";
+import { IUser } from "../interface/IUser";
 
-interface FormValues {
-  id?: string;
-  firstName: string;
-  lastName: string;
-  email: string;
-  contact: string;
-}
 
 const DrawerUser = ({
   open,
@@ -28,9 +22,9 @@ const DrawerUser = ({
 }: {
   open: boolean;
   onClose: () => void;
-  user?: FormValues;
+  user?: IUser;
 }) => {
-  const [form] = Form.useForm<FormValues>();
+  const [form] = Form.useForm<IUser>();
   const [loading, setLoading] = useState(false);
   console.log(user);
   useEffect(() => {
@@ -53,7 +47,7 @@ const DrawerUser = ({
       content: content,
     });
   };
-  const onFinish = async (values: FormValues) => {
+  const onFinish = async (values: IUser) => {
     setLoading(true);
     try {
       if (user?.id != "") {
@@ -98,7 +92,7 @@ const DrawerUser = ({
           },
         }}
       >
-        <Form<FormValues>
+        <Form<IUser>
           layout="vertical"
           initialValues={user}
           form={form}
