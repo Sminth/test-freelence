@@ -5,7 +5,7 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 ### Fonctionnalités
 
 - [x] **CRUD** des utilisateurs
-- [x] **NOTIFICATION** de SUCCES ou d'ECHEC des operations
+- [x] **NOTIFICATION** de SUCCES ou d'ECHEC des opérations
 
 
 ### Installation en local
@@ -14,6 +14,12 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 
 Avant tout , télécharger le projet dans un répertoire
 
+```bash
+npm i 
+# or
+yarn
+# or others
+```
 
 ```bash
 npm run dev
@@ -26,7 +32,8 @@ bun dev
 ```
 
 Ouvrer [http://localhost:3000](http://localhost:3000) Avec votre navigateur .
-Puis ajouter, modifier, supprimer, afficher les utilisateurs.
+
+PuiVous verrez une interface pour ajouter, modifier, supprimer, afficher les utilisateurs.
 
 
 ## Lien
