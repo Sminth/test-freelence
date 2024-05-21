@@ -2,8 +2,6 @@
 
 Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 
-
-
 ### Fonctionnalités
 
 - [x] **CRUD** des utilisateurs
@@ -12,9 +10,11 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 ### Aperçu
 
 <video width="320" height="240" controls autoplay>
-  <source src="doc/apercu.mov" type="video/mp4" >
-  Your browser does not support the video tag.
+  <source src="doc/apercu.mp4" type="video/mp4" >
+  votre navigateur ne supporte pas.
 </video>
+
+[IMG](doc/img.png)
 
 ### Installation en local
 
@@ -23,7 +23,7 @@ Ce FRONTEND est developpé avec **TypeScript** et le framework **NextJS**.
 Avant tout , télécharger le projet dans un répertoire
 
 ```bash
-npm i 
+npm i
 # or
 yarn
 # or others
@@ -43,7 +43,6 @@ Ouvrer [http://localhost:3000](http://localhost:3000) Avec votre navigateur .
 
 PuiVous verrez une interface pour ajouter, modifier, supprimer, afficher les utilisateurs.
 
-
 ### Contributeurs
 
-- Emmanuel Malan 
+- Emmanuel Malan
